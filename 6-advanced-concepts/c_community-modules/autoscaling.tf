@@ -1,8 +1,8 @@
 resource "aws_launch_configuration" "web-server" {
   name_prefix     = "web-server"
   image_id        = "${lookup(var.aws_amis, var.aws_region)}"
-  instance_type   = "t2.micro"
-  key_name        = "openwebinars"
+  instance_type   = "t2.nano"
+  key_name        = "terraform"
   security_groups = ["${aws_security_group.web-sg.id}"]
   user_data       = "${file("templates/userdata.tpl")}"
 

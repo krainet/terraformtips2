@@ -1,7 +1,7 @@
 resource "aws_instance" "web" {
-  ami = "ami-acd005d5"
-  instance_type = "t2.small"
+  ami = "ami-00ee3b59e07408c27"
+  instance_type = "t2.nano"
   tags {
-    Name = "openwebinars-webserver"
+    Name = "terraform-webserver"
   }
 }

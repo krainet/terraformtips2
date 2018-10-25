@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "aws_id" {
   type = "string"
-  default = "723002569774"
+  default = "530728036003"
 }
 
 variable "aws_amis" {

@@ -19,7 +19,7 @@ resource "mysql_database" "mydb" {
 
 resource "mysql_user" "app_user" {
   user = "app_user"
-  password = "secret_passwd"
+  plaintext_password = "secret_passwd"
   host = "%"
 }
 

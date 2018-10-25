@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "aws_id" {
   type = "string"
-  default = "723002569774"
+  default = "530728036003"
 }
 variable "environment" {
   type = "string"
@@ -19,5 +19,5 @@ variable "rds_username" {
 
 variable "rds_passwd" {
   type = "string"
-  default = "0penW3b1n4r$"
+  default = "T3rraF0rm"
 }

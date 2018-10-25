@@ -1,5 +1,5 @@
 {
-  "description": "AMI Builder for Openwebinars Example",
+  "description": "AMI Builder for Terraform Example",
   "min_packer_version": "1.1.0",
   "variables": {
     "aws_profile": ""
@@ -10,9 +10,9 @@
       "profile": "{{ user `aws_profile` }}",
       "region": "eu-west-1",
       "source_ami": "ami-785db401",
-      "instance_type": "t2.micro",
+      "instance_type": "t2.nano",
       "ssh_username": "ubuntu",
-      "ami_name": "Openwebinars - Packer Example {{timestamp}}",
+      "ami_name": "Terraform - Packer Example {{timestamp}}",
       "tags": {
         "OS_Version": "Ubuntu 16.04",
         "Version": "{{timestamp}}"

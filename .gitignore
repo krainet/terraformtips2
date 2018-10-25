@@ -52,3 +52,6 @@ fabric.properties
 
 # Terraform
 */.terraform
+
+# Idea 
+.idea

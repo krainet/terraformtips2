@@ -5,10 +5,10 @@ variable "cidr" {
 
 variable "ami_id" {
   type = "string"
-  default = "ami-acd005d5"
+  default = "ami-00ee3b59e07408c27"
 }
 
 variable "instance_type" {
   type = "string"
-  default = "t2.micro"
+  default = "t2.nano"
 }

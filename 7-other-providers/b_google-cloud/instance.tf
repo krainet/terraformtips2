@@ -1,5 +1,5 @@
 resource "google_compute_instance" "default" {
-  name = "my-openwebinars-instance"
+  name = "my-terraform-instance"
   machine_type = "f1-micro"
   zone = "europe-west1-b"
   boot_disk {

@@ -1,18 +1,18 @@
 terraform {
   required_version = ">= 0.10.7"
   backend "s3" {
-    bucket = "openwebinars-states"
-    region = "eu-west-1"
+    bucket = "terraform-states"
+    region = "eu-west-2"
     key = "states-tfstate"
-    dynamodb_table = "openwebinars-lockin"
-    profile = "openwebinars"
+    dynamodb_table = "terraform-lockin"
+    profile = "terraform"
   }
 }
 
 provider "aws" {
   region = "${var.region}"
   allowed_account_ids = ["${var.aws_id}"]
-  profile = "openwebinars"
+  profile = "terraform"
 }
 
 data "aws_availability_zones" "az" {}
